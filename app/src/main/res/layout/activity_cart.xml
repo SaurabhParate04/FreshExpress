@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/txtListBelowCart"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/toolbarCart"
+        android:layout_margin="5dp"
+        android:text="@string/ordering_from_restaurant_name"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/txtListBelowCart"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RelativeLayoutCheckBox"
+        android:layout_below="@id/txtListBelowCart"
+        android:layout_margin="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etRequest"
+        android:layout_margin="4dp">
+
+        <CheckBox
+            android:id="@+id/CheckboxCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opt_for_no_contact_delivery"
+            android:textColor="#ff6d00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CheckboxCart"
+            android:layout_marginStart="30dp"
+            android:text="@string/our_delivery"
+            android:textColor="#ff6d00"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/etRequest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnPlaceOrder"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="15dp"
+        android:autofillHints="restaurant request"
+        android:background="@drawable/button_border"
+        android:drawableStart="@drawable/ic_notes"
+        android:drawablePadding="7dp"
+        android:hint="@string/any_restaurant_request"
+        android:inputType="text"
+        android:padding="4dp" />
+
+    <Button
+        android:id="@+id/btnPlaceOrderPayOnline"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:background="@color/colorAccent"
+        android:text="@string/place_order"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnPayOnline"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:background="@color/colorAccent"
+        android:text="@string/pay_online"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/place_order"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/payOnline"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/btnPlaceOrder"
+        android:layout_margin="3dp"
+        android:background="@drawable/button_border">
+
+        <TextView
+            android:id="@+id/txtDialogPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/to_proceed"
+            android:textColor="#ff6d00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtAddressPayOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDialogPay"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/delivery_address_"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtTotalPayOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAddressPayOnline"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/payable_amount"
+            android:textSize="17sp" />
+
+
+        <EditText
+            android:id="@+id/etPasswordDialogPay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txtTotalPayOnline"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="25dp"
+            android:autofillHints="password"
+            android:background="@drawable/button_border"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ProgressLayoutCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/ProgressBarCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

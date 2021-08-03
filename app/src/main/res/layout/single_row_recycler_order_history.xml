@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SingleRowOrderHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/txtRestaurantNameOrderHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/restaurant_name_abc"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtOrderDate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRestaurantNameOrderHistory"
+        android:layout_margin="4dp"
+        android:text="@string/date_04_02_2001"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtOrderTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRestaurantNameOrderHistory"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="4dp"
+        android:text="@string/time_12_00_00"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewSingleRowOrderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOrderDate"
+        android:layout_margin="4dp" />
+
+    <TextView
+        android:id="@+id/txtRestaurantTotalCostOrderHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RecyclerViewSingleRowOrderHistory"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:drawableEnd="@drawable/icon_rs"
+        android:drawablePadding="3dp"
+        android:text="@string/total_price_400"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/txtRestaurantTotalCostOrderHistory"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

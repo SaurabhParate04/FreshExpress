@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_bar_home_frag"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_for_restaurants"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/action_sort_by_name_az"
+        android:title="@string/name_a_z" />
+
+    <item
+        android:id="@+id/action_sort_by_name_za"
+        android:title="@string/name_z_a" />
+
+    <item
+        android:id="@+id/action_sort_by_cost_ascending"
+        android:title="@string/cost_for_one_low_to_high" />
+
+    <item
+        android:id="@+id/action_sort_by_cost_descending"
+        android:title="@string/cost_for_one_high_to_low" />
+
+    <item
+        android:id="@+id/action_sort_by_rating_ascending"
+        android:title="@string/rating_low_to_high" />
+
+    <item
+        android:id="@+id/action_sort_by_rating_descending"
+        android:title="@string/rating_high_to_low" />
+
+</menu>

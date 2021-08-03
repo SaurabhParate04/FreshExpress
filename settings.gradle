@@ -1,0 +1,2 @@
+rootProject.name='Fresh Express'
+include ':app'

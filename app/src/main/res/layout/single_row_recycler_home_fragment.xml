@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardViewHomeFrag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rowSingleRowHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgSingleRowHome"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/logo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_logo_transparent" />
+
+        <TextView
+            android:id="@+id/txtNameSingleRowHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imgSingleRowHome"
+            android:text="@string/restaurant_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/txtCostSingleRowHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameSingleRowHome"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/imgSingleRowHome"
+            android:drawableStart="@drawable/icon_rs"
+            android:text="@string/cost_person"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtRatingSingleRowHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameSingleRowHome"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/star"
+            android:drawablePadding="5dp"
+            android:text="@string/_4_5"
+            android:textColor="#ffd600"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnFavSingleRowHomeOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/fav_off"
+            android:contentDescription="@string/fav_off"
+            android:padding="15dp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnFavSingleRowHomeOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/fav_on"
+            android:contentDescription="@string/fav_on"
+            android:padding="15dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

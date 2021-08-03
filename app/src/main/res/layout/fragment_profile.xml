@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProfileFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/elementsColor"
+        android:minHeight="?attr/actionBarSize" />
+
+    <ImageView
+        android:id="@+id/imgProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@+id/toolbarProfileFrag"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/profileBack"
+        android:src="@drawable/food_item" />
+
+    <RelativeLayout
+        android:id="@+id/infoProfileFragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfilePic">
+
+        <TextView
+            android:id="@+id/txtAccountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/account_info"
+            android:textColor="#000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAccountInfo"
+            android:layout_marginStart="20dp"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="8dp"
+            android:padding="5dp"
+            android:text="@string/name"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txtMobileNumberProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNameProfile"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="8dp"
+            android:padding="5dp"
+            android:text="@string/mobile_number_"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txtEmailProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMobileNumberProfile"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="8dp"
+            android:padding="5dp"
+            android:text="@string/email_"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txtAddressProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmailProfile"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/home_address"
+            android:drawablePadding="8dp"
+            android:padding="5dp"
+            android:text="@string/address_"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

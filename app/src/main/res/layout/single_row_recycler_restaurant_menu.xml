@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/txtSingleRowRestaurantMenuName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/txtSingleRowRestaurantMenuItemNo"
+        android:text="@string/name_of_item"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txtSingleRowRestaurantMenuPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSingleRowRestaurantMenuName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/txtSingleRowRestaurantMenuItemNo"
+        android:text="@string/rs_150"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txtSingleRowRestaurantMenuItemNo"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="5dp"
+        android:text="@string/_1"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnAddRestaurantMenu"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="7dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/layoutQty"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/button_border">
+
+        <Button
+            android:id="@+id/btnPlusRestaurantMenu"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="1dp"
+            android:background="#fff"
+            android:text="@string/btnQty1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMinusRestaurantMenu"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"
+            android:background="#fff"
+            android:text="@string/btnQty2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtQty"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:paddingTop="3dp"
+            android:text="@string/_5"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
