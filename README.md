@@ -8,3 +8,8 @@ Front-end: **XML**, Back-end: **Kotlin**
 3. Add items to cart
 4. Add any restaurant as favourite
 5. See order history
+
+## Output Screenshots
+![alt text](https://github.com/SaurabhParate04/FreshExpress/blob/master/Output%20Screenshots/image.jpg)
+
+![alt text](https://github.com/SaurabhParate04/FreshExpress/blob/master/Output%20Screenshots/image%202.jpg)
