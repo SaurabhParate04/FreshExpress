@@ -9,7 +9,7 @@ Front-end: **XML**, Back-end: **Kotlin**
 4. Add any restaurant as favourite
 5. See order history
 
-## Output Screenshots
+## Screenshots
 ![alt text](https://github.com/SaurabhParate04/FreshExpress/blob/master/Output%20Screenshots/image.jpg)
 
 ![alt text](https://github.com/SaurabhParate04/FreshExpress/blob/master/Output%20Screenshots/image%202.jpg)
